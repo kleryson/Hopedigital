@@ -210,3 +210,6 @@
 2013-07-30 11:48:26 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method HTML::div() ~ APPPATH\classes\Controller\Welcome.php [ 7 ] in :
 2013-07-30 11:48:26 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
 #1 {main} in :
+2013-07-30 14:45:17 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method HTML::div() ~ APPPATH\classes\Controller\Welcome.php [ 7 ] in :
+2013-07-30 14:45:17 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in :
