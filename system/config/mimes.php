@@ -1,13 +1,15 @@
-<?php defined('SYSPATH') OR die('No direct script access.');
+<?php defined('SYSPATH') OR die('No direct access allowed.');
 /**
+ * @package  Core
+ *
  * A list of mime types. Our list is generally more complete and accurate than
  * the operating system MIME list.
  *
  * If there are any missing options, please create a ticket on our issue tracker,
- * http://kohanaphp.com/trac/newticket. Be sure to give the filename and
+ * http://dev.kohanaphp.com/projects/kohana2. Be sure to give the filename and
  * expected MIME type, as well as any additional information you can provide.
  */
-return array
+$config = array
 (
 	'323'   => array('text/h323'),
 	'7z'    => array('application/x-7z-compressed'),
@@ -17,7 +19,6 @@ return array
 	'aif'   => array('audio/x-aiff'),
 	'aifc'  => array('audio/x-aiff'),
 	'aiff'  => array('audio/x-aiff'),
-	'amf'   => array('application/x-amf'),
 	'asf'   => array('video/x-ms-asf'),
 	'asr'   => array('video/x-ms-asf'),
 	'asx'   => array('video/x-ms-asf'),
@@ -46,7 +47,6 @@ return array
 	'dmg'   => array('application/x-apple-diskimage'),
 	'dms'   => array('application/octet-stream'),
 	'doc'   => array('application/msword'),
-	'docx'  => array('application/vnd.openxmlformats-officedocument.wordprocessingml.document'),
 	'dvi'   => array('application/x-dvi'),
 	'dxr'   => array('application/x-director'),
 	'eml'   => array('message/rfc822'),
@@ -80,7 +80,7 @@ return array
 	'jpe'   => array('image/jpeg', 'image/pjpeg'),
 	'jpeg'  => array('image/jpeg', 'image/pjpeg'),
 	'jpg'   => array('image/jpeg', 'image/pjpeg'),
-	'js'    => array('application/javascript'),
+	'js'    => array('application/x-javascript'),
 	'json'  => array('application/json'),
 	'latex' => array('application/x-latex'),
 	'lha'   => array('application/octet-stream'),
@@ -150,7 +150,6 @@ return array
 	'pot'   => array('application/vnd.ms-powerpoint'),
 	'pps'   => array('application/vnd.ms-powerpoint'),
 	'ppt'   => array('application/powerpoint'),
-	'pptx'  => array('application/vnd.openxmlformats-officedocument.presentationml.presentation'),
 	'ps'    => array('application/postscript'),
 	'psd'   => array('application/x-photoshop', 'image/x-photoshop'),
 	'pub'   => array('application/x-mspublisher'),
@@ -193,7 +192,6 @@ return array
 	'wav'   => array('audio/x-wav'),
 	'wax'   => array('audio/x-ms-wax'),
 	'wbxml' => array('application/wbxml'),
-	'webm'  => array('video/webm'),
 	'wm'    => array('video/x-ms-wm'),
 	'wma'   => array('audio/x-ms-wma'),
 	'wmd'   => array('application/x-ms-wmd'),
@@ -214,9 +212,8 @@ return array
 	'xlc'   => array('application/excel', 'application/vnd.ms-excel'),
 	'xlm'   => array('application/excel', 'application/vnd.ms-excel'),
 	'xls'   => array('application/excel', 'application/vnd.ms-excel'),
-	'xlsx'  => array('application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'),
 	'xlt'   => array('application/excel', 'application/vnd.ms-excel'),
-	'xml'   => array('text/xml', 'application/xml'),
+	'xml'   => array('text/xml'),
 	'xof'   => array('x-world/x-vrml'),
 	'xpm'   => array('image/x-xpixmap'),
 	'xsl'   => array('text/xml'),
