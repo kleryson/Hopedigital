@@ -4,13 +4,12 @@ return array
 (
 		'default' => array
 		(
-				'type'       => 'mysql',
+				'type'       => 'pdo',
 				'connection' => array(
-						'hostname'   => 'localhost',
-						'database'   => 'kohana_blog',
-						'username'   => 'root',
-						'password'   => 'root',
-						'persistent' => FALSE,
+					'dsn'=>'mysql:dbname=sistema;host=192.69.223.240',
+					'username' => 'sistema',
+					'password' => 's1st3m4',
+					'persistent' => FALSE 
 				),
 				'table_prefix' => '',
 				'charset'      => 'utf8',
